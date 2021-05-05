@@ -1,0 +1,66 @@
+@import "variables/color";
+@import "variables/fuentes";
+
+/*seccion cuenta*/
+.grid_cuenta {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "header_cuenta header_cuenta header_cuenta"
+    ". titulo ."
+    ". formularios ."
+    "footer_cuenta footer_cuenta footer_cuenta"
+    ;
+    grid-template-columns: 25% 50% 25% ;
+    grid-template-rows: 15% 15% 60% 10%;
+}
+
+.header_cuenta {
+    grid-area: header_cuenta;
+}
+
+.titulo_cuenta {
+    grid-area: titulo;
+}
+
+.formularios_cuenta {
+    grid-area: formularios;
+}
+
+.footer_cuenta {
+    grid-area: footer_cuenta;
+}
+
+.estilo_formulario{
+    background-color: $color-blanco;
+    border-radius: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.1),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),;
+}
+
+.boton {
+    background-color: rgba(68, 31, 87, 0.459);
+    color: $color-blanco;
+    font-family: $fuente-secundaria;
+    font-weight: bolder;
+    padding: 4%;
+    border-radius: 12%;
+    margin-top: 4%;
+    margin-left: 90%;
+
+}
+
+.boton:hover{ 
+    box-shadow: 
+    0 12px 16px 0 rgba(0,0,0,0.24),
+    0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.registrarse {
+    margin-top: 0%;
+}

@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="CARRITO, COMPRAR, ONLINE, SHOP, TIENDA, VIENTO LUNAR">
-    <meta name="descripton" content="Acá podrás ver y editar los articulos que seleccionaste antes de realizar tu compra.">
+    <meta name="description" content="Acá podrás ver y editar los articulos que seleccionaste antes de realizar tu compra.">
     <title>Carrito</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-    <!--código Javascript para animaciones-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <!--link para íconos-->
+    <script src="https://kit.fontawesome.com/9f60c6aa26.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -36,20 +37,17 @@
     <main class="height_pagina">
 
         <h3 class="titulos_secciones">CARRITO</h3>
-        <h4 class="fuente h2_carrito animate__animated animate__pulse"> Cargando artículos seleccionados</h4>
+        <div class="spinner"></div>
+        <div><h4 class="fuente h4_carrito"> Cargando artículos seleccionados <span class="cargando_puntos h4_carrito"> .</span></h4></div>
     </main>
 
     <footer>
-        <h5> <a href="https://www.facebook.com/Viento-Lunar-Almacen-de-arte--282350798846714">FACEBOOK: Viento Lunar</a> </h5>
-        <h5> <a href="https://www.instagram.com/vientolunar_/">INSTAGRAM: Viento Lunar</a> </h5>
-        <h5> <a href=""></a> Info sobre medios de pago</h5>
-        <h5> <a href="envios.html">ENVIOS</a></h5>
+        <h5> <i class="fab fa-facebook-square"></i> <a href="https://www.facebook.com/Viento-Lunar-Almacen-de-arte--282350798846714">Facebook</a> </h5>
+        <h5> <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/vientolunar_/"> Instagram</a> </h5>
+        <h5> <i class="fas fa-credit-card"></i> <a href=""></a> Medios de pago</h5>
+        <h5> <i class="fas fa-truck"></i> <a href="envios.html"> Envios</a></h5>
     </footer>
-    <!--código Javascript para animaciones-->
-    <script src="js/wow.min.js"></script>
-    <script>
-       new WOW().init();
-    </script>
+
     
 </body>
 </html>

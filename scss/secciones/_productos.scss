@@ -1,0 +1,96 @@
+@import "variables/color";
+@import "variables/fuentes";
+
+/*Sección productos*/
+.grid_productos {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    "header_prod header_prod header_prod"
+    "menu_prod main_prod ."
+    ". main_prod ."
+    "footer_prod footer_prod footer_prod"
+    ;
+    grid-template-columns: 15% 70% 15% ;
+    grid-template-rows: 10% 43% 42% 5%;
+}
+
+.header_prod {
+    grid-area: header_prod;
+}
+
+.menu_productos {
+    grid-area: menu_prod;
+    margin-top: 15%;
+    border: none;
+}
+
+.main_prod {
+    grid-area: main_prod;
+}
+
+.footer_prod {
+    grid-area: footer_prod;
+}
+
+/*menu de categorias de la seccion productos*/
+aside h2{
+    font-weight: bold;
+    font-family: $fuente-secundaria;
+    text-align: center;
+    font-size: 1.7rem;
+    color: rgb(102, 25, 126);
+}
+
+aside h3{
+    font-family: $fuente-secundaria;
+    font-weight: bold;
+    color: rgb(27, 27, 27);
+    font-size: 1.5rem;
+}
+
+aside li {
+    font-family: $fuente-secundaria;
+    font-weight: bold;
+    text-align: left;
+    list-style: none;
+}
+
+aside p {
+    font-family: $fuente-secundaria;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+/*organizacion de la cuadricula de las tarjetas de los productos*/
+#productsOrder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10%;
+
+}
+
+.box_size_prod {
+    background-color: $fondo-tarjetas;
+    padding: 4%;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.1),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 220px ;
+    width: 180px ;
+    margin:5px;
+    font-family: $fuente-primaria;
+}
+
+.zoom_productos:hover {
+    transform: scale(2,1);
+    transform: scale(1.5,1.5);
+    background-color: $fondo-tarjetas;
+}

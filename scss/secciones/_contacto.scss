@@ -1,0 +1,67 @@
+@import "variables/color";
+@import "variables/fuentes";
+
+/*seccion contacto*/
+.grid_contacto {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "header header header"
+    ". titulo ."
+    ". formularios ."
+    "footer footer footer";
+    grid-template-columns: 25% 50% 25% ;
+    grid-template-rows: 15% 15% 60% 10%;
+}
+
+.header_contacto {
+    grid-area: header;
+}
+
+.titulo_contacto {
+    grid-area: titulo;
+}
+
+.formularios_contacto {
+    grid-area: formularios;
+}
+
+.footer_contacto {
+    grid-area: footer;
+    margin-bottom: 0%;
+}
+
+/*formulario contacto*/
+.fieldset {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.centrar_contenido {
+    margin-right: 34%;
+}
+
+.tarjetas_formularios {
+    background-color: $color-blanco;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 10%;
+    padding-left: 15%;
+    border-radius: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.1),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),;
+
+}
+
+.fuente_titulo_form {
+    font-family: $fuente-secundaria;
+    margin-bottom: 3%;
+    color: $titulos-secciones;
+}

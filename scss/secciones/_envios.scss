@@ -1,0 +1,48 @@
+@import "variables/color";
+@import "variables/fuentes";
+
+/*Sección envíos*/
+
+.centrar_tabla {
+    text-align: center;
+    font-size: 90%;
+    font-family: $fuente-secundaria;
+    margin-bottom: 3%;
+    color: $titulos-secciones;
+}    
+
+.tabla_envios {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 10%;
+    font-size: 1.33rem;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    margin-right: 25%;
+    margin-left: 25%;
+    background-color: $color-blanco;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.1),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),;
+
+}
+
+.adentro {
+    list-style-position: inside;
+    list-style-type: upper-latin;
+}
+
+.sacar_punto{
+    list-style: none;
+}
+
+section h1 {
+    text-align: center;
+    color: $titulos-secciones;
+}

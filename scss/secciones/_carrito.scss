@@ -1,0 +1,61 @@
+@import "variables/color";
+@import "variables/fuentes";
+
+/*Sección carrito*/
+
+.h4_carrito {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: $fuente-secundaria;
+}
+.height_pagina {
+    min-height: 100vh;
+}
+
+.cargando_puntos:after {
+    font-family: $fuente-secundaria;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+    animation: ellipsis steps(4,end) 900ms infinite;
+    content: "\2026";
+    width: 0px;
+}
+  
+@keyframes ellipsis {
+    to {
+      width: 20px;    
+    }
+}
+  
+@-webkit-keyframes ellipsis {
+    to {
+      width: 20px;    
+    }
+}
+
+.spinner {
+    display: inline-block;
+    margin-top: 20%;
+    margin-left: 48%;
+    margin-right: 49%;
+    width: 60px;
+    height: 60px;
+    border: 3px solid rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    border-top-color: rgb(60, 20, 97);
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+}

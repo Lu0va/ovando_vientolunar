@@ -1,0 +1,130 @@
+@import "variables/color";
+@import "variables/fuentes";
+
+/*Sección index*/
+.titulos_secciones {
+    font-size: 200%;
+    font-family:  'Open Sans Condensed',sans-serif;
+    font-style: normal;
+}
+
+
+.quienes_somos{ /*edicion de la palabra del menú*/
+    word-spacing: 5px;
+}
+
+
+#portada { /*foto tipo portada de la sección inicio*/
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 15%;
+    display: flex;
+    justify-content: center;
+    background-image: url(/vientolunar_repositorio/fotos/portada-min.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container {  
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+}
+
+.container article {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 2px rgb(207, 185, 111) ;
+}
+
+.container article:hover {
+    transform: scale(2,1);
+    transform: scale(1.5,1.5);
+    background-color: rgb(240, 237, 219);
+}
+
+.container article p {
+    display: inline;
+}
+
+.productos_destacados {
+    align-items: center;
+    font-family: $fuente-secundaria;
+    background-color: rgb(251, 243, 243);    
+    text-align: center;
+    border: 0.1px solid $dorado-suave;
+    margin-left: 10% ;
+    margin-right: 10%;
+    margin-top: 10%;
+    color: $dorado-suave;
+    font-size: 1.6rem;
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+.titulos_secciones {
+    color: $titulos-secciones;
+    text-align: center;
+}
+.fuente {
+    font-family: $fuente-primaria;
+}
+
+.fuente_titulo_form {
+    font-family: $fuente-primaria;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+#boxSize {
+    background-color: $fondo-tarjetas;
+    padding: 2%;
+    border: none;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.1),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: $fuente-primaria;
+}
+
+/*grid seccion inicio*/
+.grid_index {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6 1fr) ;
+    grid-template-rows: repeat(8 1fr);
+}
+.header_index {
+    /*grid-row:  1 / 2 ;
+    grid-column: 1 / 7;*/
+    grid-area:  1 / 1 / 2 / 7;
+
+}
+.portada_grid {
+    /*grid-row: 2 / 4 ;
+    grid-column: 1 / 7;*/
+    grid-area: 2 / 1 / 4 / 7 ;
+}
+.h3 {
+    /*grid-row: 4 / 5;
+    grid-column: 3 / 5;*/
+    grid-area: 4 / 3 / 5 / 5;
+}
+.fotos_prod {
+    /*grid-row: 5 / 7;
+    grid-column: 2 / 6;*/
+    grid-area: 5 / 2 / 7 / 6 ;
+}
+.footer_grid {
+    /*grid-row: 8 / 9 ;
+    grid-column: 1 / 7 ;*/
+    grid-area: 8 / 1 / 9 / 7;
+}

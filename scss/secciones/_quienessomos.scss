@@ -1,0 +1,34 @@
+@import "variables/color";
+@import "variables/fuentes";
+
+/*Sección quienes somos*/
+.foto_rodri {
+    border-radius: 10%;
+}
+
+.letra {
+    font-family: $fuente-secundaria;
+    text-align: center;
+    padding: 20%;
+}
+
+#presentacion_rodri {
+    display: flex;
+    flex-direction: row;
+    margin: 10%;
+}
+
+#presentacion_lucas {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10%;
+}
+
+.presentacion_texto {
+    padding-left: 5%;
+    font-size: 25px;
+}
+
+.fuente_presentacion {
+    font-family: $fuente-primaria;
+}

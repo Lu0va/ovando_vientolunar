@@ -1,0 +1,105 @@
+@import "secciones/index";
+@import "secciones/productos";
+@import "secciones/quienessomos";
+@import "secciones/contacto";
+@import "secciones/cuenta";
+@import "secciones/carrito";
+@import "secciones/envios";
+@import "variables/color";
+@import "variables/fuentes";
+
+*{
+    font-family: sans-serif;
+}
+body {
+    background-image: linear-gradient(to top left, #e6c5e3, #f6f0c4);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    header{
+        background-color:$color-header;
+        color: $color-blanco;
+        text-align: center;
+        padding: 0.4px;
+        line-height: 20%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    h1{
+        font-size: 200%;
+        font-family: $fuente-primaria;
+        font-style: normal;
+    }
+    h2{
+        font-family:  $fuente-primaria;
+        font-weight: lighter;
+        font-size: 5mm;
+    }
+    h5 {
+        font-family: $fuente-secundaria;
+        font-style: thin;
+        color: $color-blanco;
+        font-size: 1 rem;
+    }
+    nav{
+        border: 1px solid $fondo-menu;
+        ul{
+            text-align: center;
+            li{
+                display: inline-block;
+                padding: 10px 20px;
+                a{
+                    text-decoration: none;
+                    font-family: sans-serif;
+                    word-spacing: 60px; 
+                    color: $color-negro;
+                    &:hover{
+                        color: purple;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        background-size: 100%;
+        padding: 0%;
+        color: $color-blanco;
+        font-family: sans-serif;
+        background: linear-gradient(to top, #790652,#a7237b );
+        display: flex;
+        justify-content: space-evenly;
+        a{
+            font-family: $fuente-secundaria;
+            color:$color-blanco;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+    }
+
+}
+
+#menu{
+    background-color:$fondo-menu;
+}
+
+.centrar_texto {
+    text-align: center;
+    color: rgb(39, 39, 39);
+}
+
+@media only screen and (max-width: 320px) /*para celulares*/ {
+    .grid_index {
+        grid-template-columns: 20% 40% 40% ;
+    }
+}
+
+@media only screen and (max-width: 768px) /*para tablet*/{
+    .grid_index {
+        grid-template-columns: 20% 40% 40% ;
+    }
+}
+@media only screen and (max-width: 1024px) /*para escritorio*/ {
+    .grid_index {
+        grid-template-columns: 20% 40% 40% ;
+    }
+}
